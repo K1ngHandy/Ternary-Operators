@@ -43,7 +43,11 @@
     and a number total as arguments and returns either total - 10 if isMember is truthy, 
     or total if isMember is falsy. Use the ternary operator to create the conditional.
     */
-    //ENTER YOUR CODE HERE
+    function getDiscount(isMember, numTotal) {
+      return isMember ? numTotal - 10 : numTotal;
+    }
+    console.log(getDiscount(true, 3));
+    console.log(getDiscount(false, 2));
 
     /* 
     PROBLEM 5 (DEBUGGING): The following function isPalindrome is supposed to return true if the string is a palindrome,
