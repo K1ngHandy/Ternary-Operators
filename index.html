@@ -11,14 +11,21 @@
     returns either "Hello, [name]!" if name is truthy, or "Hello, stranger!" if name is falsy. 
     Use the ternary operator to create the conditional.
     */
-    //ENTER YOUR CODE HERE
+    function greeting(name = '') {
+      return name ? `Hello, ${name}!` : `Hello, stranger!`;
+    }
+    console.log(greeting(''));
      
     /* 
     PROBLEM 2: Declare a function called canDrink that takes an age as an argument and 
     returns either "You can drink!" if age is greater than or equal to 21, 
     or "You cannot drink." if age is less than 21. Use the ternary operator to create the conditional.
     */
-    //ENTER YOUR CODE HERE
+    function canDrink(age = 0) {
+      return age >= 21 ? "You can drink!" : "You cannot drink.";
+    }
+    console.log(canDrink(21));
+    console.log(canDrink(19));
     
      /* 
     PROBLEM 3: Declare a function called isEven that takes a number as an argument and 
