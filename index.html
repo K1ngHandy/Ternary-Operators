@@ -54,15 +54,17 @@
     and false if it is not.  However, it is not working correctly.  Please debug the function so that it works as intended.
     */
 
-    /*
     function isPalindrome(str) {
       let reversedStr = "";
       for (let i = str.length - 1; i >= 0; i--) {
         reversedStr += str[i];
       }
-      return reversedStr = str;
+      // console.log(reversedStr);
+      return reversedStr === str ? 'true' : 'false';
     }
-    */
+    console.log(isPalindrome('Hello'));
+    console.log(isPalindrome('wow'));
+    
     
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
